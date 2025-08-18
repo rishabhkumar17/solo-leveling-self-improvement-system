@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gradient-to-br from-shadow-dark via-shadow-gray to-shadow-blue text-shadow-light;
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+@layer components {
+  .shadow-card {
+    @apply bg-gradient-to-br from-shadow-gray/80 to-shadow-dark/80 backdrop-blur-sm border border-shadow-purple/30 rounded-lg shadow-2xl;
+  }
+  
+  .glow-text {
+    @apply text-accent-gold animate-glow;
+  }
+  
+  .stat-bar {
+    @apply bg-shadow-gray rounded-full h-2 overflow-hidden;
+  }
+  
+  .stat-fill {
+    @apply h-full bg-gradient-to-r from-accent-green via-accent-gold to-accent-red transition-all duration-500;
+  }
+  
+  .quest-card {
+    @apply shadow-card p-4 hover:scale-105 transition-transform duration-300 cursor-pointer;
+  }
+  
+  .skill-icon {
+    @apply w-8 h-8 rounded-full bg-gradient-to-br from-accent-gold to-accent-red flex items-center justify-center text-shadow-dark font-bold;
+  }
+  
+  .level-badge {
+    @apply bg-gradient-to-r from-accent-gold to-accent-red text-shadow-dark px-3 py-1 rounded-full font-bold text-sm;
+  }
+  
+  .achievement-unlocked {
+    @apply animate-pulse-slow border-accent-gold;
+  }
+} 
