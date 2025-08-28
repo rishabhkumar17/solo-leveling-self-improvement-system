@@ -17,7 +17,7 @@ export const questDatabase: Quest[] = [
   {
     id: 'daily_exercise',
     name: 'Physical Training',
-    description: 'Complete 30 minutes of exercise',
+    description: 'Complete 30 minutes of workout',
     category: 'daily' as QuestCategory,
     difficulty: 'medium' as QuestDifficulty,
     experienceReward: 50,
